@@ -1,0 +1,13 @@
+{
+  "world_folders.create_new_folder": "Create New Folder",
+  "world_folders.folder": "Folder",
+  "world_folders.folder_entry": "Folder %s",
+  "world_folders.folder_entry.single": "1 entry",
+  "world_folders.folder_entry.multiple": "%s entries",
+  "world_folders.select_folder": "Select Folder",
+  "world_folders.edit_folder": "Edit Folder",
+  "world_folders.edit_folder.folder_name": "Folder Name",
+  "world_folders.edit_folder.color": "Color",
+  "world_folders.delete_folder.title": "Are you sure you want to delete this folder?",
+  "world_folders.delete_folder.message": "'%s' will be removed and all worlds within it will be moved to the unsorted list."
+}

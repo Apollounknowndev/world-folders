@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "world_folders",
+	"version": "${version}",
+	"name": "World Folders",
+	"description": "Organize your worlds into in-game folders!",
+	"authors": [
+		"Apollo"
+	],
+	"license": "MIT",
+	"icon": "assets/world_folders/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.worldgen.world.folders.WorldFolders"
+		]
+	},
+	"mixins": [
+		"world_folders.mixins.json"
+	],
+	"depends": {
+		"minecraft": ">=1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

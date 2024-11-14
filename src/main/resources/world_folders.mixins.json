@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "dev.worldgen.world.folders.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "SelectWorldScreenMixin",
+    "WorldListWidgetMixin",
+    "CreateWorldScreenMixin",
+    "EditWorldScreenMixin",
+    "GameTabMixin",
+    "WorldEntryAccessor",
+    "WorldEntryMixin",
+    "WorldListWidgetAccessor"
+  ]
+}
