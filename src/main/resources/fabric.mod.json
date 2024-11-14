@@ -9,7 +9,7 @@
 	],
 	"license": "MIT",
 	"icon": "assets/world_folders/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"dev.worldgen.world.folders.WorldFolders"
@@ -19,7 +19,7 @@
 		"world_folders.mixins.json"
 	],
 	"depends": {
-		"minecraft": ">=1.21",
+		"minecraft": ">=1.21.2",
 		"java": ">=21",
 		"fabric-api": "*"
 	}
