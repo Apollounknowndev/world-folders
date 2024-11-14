@@ -39,7 +39,7 @@ public class FolderEntry extends WorldListWidget.Entry {
         float r = (rgba >> 16 & 0xFF) / 255.0f;
         float g = (rgba >> 8 & 0xFF) / 255.0f;
         float b = (rgba & 0xFF) / 255.0f;
-        return ColorHelper.fromFloats(1, r, g, b);
+        return ColorHelper.Argb.fromFloats(1, r, g, b);
     }
 
     public FolderData folderData() {
@@ -59,7 +59,7 @@ public class FolderEntry extends WorldListWidget.Entry {
     public void render(DrawContext context, int index, int y, int x, int entryWidth, int entryHeight, int mouseX, int mouseY, boolean hovered, float tickDelta) {
         context.fill(x, y, x + 4, y + 32, this.rgb);
 
-        context.drawGuiTexture(RenderLayer::getGuiTextured, this.selected ? SELECTED_TEXTURE : TEXTURE, x + 8, y + 6, 20, 20);
+        context.drawGuiTexture(this.selected ? SELECTED_TEXTURE : TEXTURE, x + 8, y + 6, 20, 20);
 
         context.drawText(this.client.textRenderer, this.name, x + 32 + 3, y + 4, Colors.WHITE, false);
         context.drawText(this.client.textRenderer, this.entryText, x + 32 + 3, y + this.client.textRenderer.fontHeight + 6, Colors.LIGHT_GRAY, false);

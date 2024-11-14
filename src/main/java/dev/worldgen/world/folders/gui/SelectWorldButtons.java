@@ -29,7 +29,7 @@ public class SelectWorldButtons {
     public void init(List<ClickableWidget> widgets, MinecraftClient client, SelectWorldScreen selectScreen, int width, int height) {
         this.list = (WorldListWidget) widgets.getLast();
 
-        widgets.add(ButtonWidget.builder(Text.translatable("selectWorld.create"), button -> CreateWorldScreen.show(client, selectScreen)).dimensions(width / 2 + 4, height - 52, 150, 20).build());
+        widgets.add(ButtonWidget.builder(Text.translatable("selectWorld.create"), button -> CreateWorldScreen.create(client, selectScreen)).dimensions(width / 2 + 4, height - 52, 150, 20).build());
         widgets.add(ButtonWidget.builder(Text.translatable("world_folders.create_new_folder"), button -> EditFolderScreen.create(client, selectScreen, "New Folder", createRandomColor())).dimensions(width / 2 - 154, height - 52, 150, 20).build());
 
         this.editButton = add(widgets, ButtonWidget.builder(Text.translatable("selectWorld.edit"), button -> {

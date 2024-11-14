@@ -91,11 +91,11 @@ public class EditFolderScreen extends Screen {
 
     @Override
     protected void init() {
-        this.refreshWidgetPositions();
+        this.initTabNavigation();
     }
 
     @Override
-    protected void refreshWidgetPositions() {
+    protected void initTabNavigation() {
         this.layout.refreshPositions();
         SimplePositioningWidget.setPos(this.layout, this.getNavigationFocus());
     }

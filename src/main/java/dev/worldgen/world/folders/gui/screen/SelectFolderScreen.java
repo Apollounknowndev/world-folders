@@ -40,11 +40,11 @@ public class SelectFolderScreen extends Screen {
         this.list = this.layoutWidget.addBody(new FolderListWidget(this.client, this.width, this));
         this.layoutWidget.addFooter(ButtonWidget.builder(ScreenTexts.BACK, button -> this.close()).width(200).build());
         this.layoutWidget.forEachChild(this::addDrawableChild);
-        this.refreshWidgetPositions();
+        this.initTabNavigation();
     }
 
     @Override
-    protected void refreshWidgetPositions() {
+    protected void initTabNavigation() {
         this.layoutWidget.refreshPositions();
         if (this.list != null) {
             this.list.position(this.width, this.layoutWidget);
